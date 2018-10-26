@@ -1,6 +1,6 @@
 #!/bin/sh
-#git config --global user.email "chrissunny94@gmail.com"
-#git config --global user.name "chrissunny94"
+git config --global user.email "chrissunny94@gmail.com"
+git config --global user.name "chrissunny94"
 
 #git config --global credential.helper cache
 #git config --global credential.helper cache
