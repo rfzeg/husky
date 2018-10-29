@@ -20,8 +20,8 @@
 
     <!-- local costmap, needs size -->
     <rosparam file="$(find husky_navigation)/config/costmap_local.yaml" command="load" ns="local_costmap" />
-    <param name="local_costmap/width" value="15.0"/>
-    <param name="local_costmap/height" value="15.0"/>
+    <param name="local_costmap/width" value="45.0"/>
+    <param name="local_costmap/height" value="45.0"/>
 
     <!-- static global costmap, static map provides size -->
     <rosparam file="$(find husky_navigation)/config/costmap_global_static.yaml" command="load" ns="global_costmap" unless="$(arg no_static_map)"/>

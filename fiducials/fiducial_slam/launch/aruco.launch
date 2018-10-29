@@ -29,10 +29,10 @@
 
    <!--  Placeholder for output topic remapping -->
     <remap from="odometry/filtered" to="/fiducial_odometry/filtered"/>
-    <remap from="accel/filtered" to="fiducial_accel/filtered"/>
+    
    
 
 </node>
 
-
+<!--<node pkg="tf" type="static_transform_publisher" name="orb_slam_world_link" args="0 0 0 0 0 0 /map /odom 100"/> -->
 </launch>

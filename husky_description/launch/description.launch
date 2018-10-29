@@ -17,6 +17,6 @@
 
     <node pkg="tf" type="static_transform_publisher" name="orb_slam_link" args="0 0 0 0 0 0 /base_link /orb_slam2/camera 100"/> 
     <node pkg="tf" type="static_transform_publisher" name="orb_slam_world_link" args="0 0 0 0 0 0 /odom /orb_slam2/world 100"/> 
-
+    
 
 </launch>
