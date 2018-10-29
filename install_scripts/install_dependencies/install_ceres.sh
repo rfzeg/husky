@@ -15,14 +15,14 @@ sudo apt-get install libeigen3-dev
 sudo apt-get install libsuitesparse-dev
 # - However, if you want to build Ceres as a *shared* library, you must
 #   add the following PPA:
-sudo add-apt-repository ppa:bzindovic/suitesparse-bugfix-1319687
-sudo apt-get update
-sudo apt-get install libsuitesparse-dev
+#sudo add-apt-repository ppa:bzindovic/suitesparse-bugfix-1319687
+#sudo apt-get update
+#sudo apt-get install libsuitesparse-dev
 
-tar zxf ceres-solver-1.14.0.tar.gz
+#tar zxf ceres-solver-1.14.0.tar.gz
 mkdir ceres-bin
 cd ceres-bin
-cmake ../ceres-solver-1.14.0
+cmake ../ceres-solver
 make -j3
 make test
 # Optionally install Ceres, it can also be exported using CMake which
