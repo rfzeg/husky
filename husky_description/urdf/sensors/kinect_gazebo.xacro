@@ -2,7 +2,7 @@
 <root name="kinect_gazebo" xmlns:xacro="http://ros.org/wiki/xacro">
   <!-- Microsoft Kinect / ASUS Xtion PRO Live for simulation -->
 
-  <xacro:include filename="$(find jackal_description)/urdf/sensors/common_properties.urdf.xacro" />
+  <xacro:include filename="$(find husky_description)/urdf/sensors/common_properties.urdf.xacro" />
 
   <xacro:macro name="kinect_sensor" params="link_name camera_name frame_name">
     <gazebo reference="${link_name}">  

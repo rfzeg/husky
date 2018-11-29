@@ -36,6 +36,7 @@
   <!-- Start EKF for localization -->
   <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization">
     <rosparam command="load" file="$(find husky_control)/config/localization.yaml" />
+    <remap from="odometry/filtered" to="encoder_imu_odometry/filtered"/>
   </node>
 
   <node pkg="interactive_marker_twist_server" type="marker_server" name="twist_marker_server" output="screen"/>

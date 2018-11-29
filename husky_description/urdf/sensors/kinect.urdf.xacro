@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <root name="sensor_kinect" xmlns:xacro="http://ros.org/wiki/xacro">
-	<xacro:include filename="$(find jackal_description)/urdf/sensors/kinect_gazebo.xacro" />
+	<xacro:include filename="$(find husky_description)/urdf/sensors/kinect_gazebo.xacro" />
         
 
    	<!-- camera_name has to be unique! -->
@@ -45,7 +45,7 @@
 			<visual>
 			 <origin xyz="0 0 0" rpy="0 0 ${M_PI/2}"/>
 				<geometry>
-				<mesh filename="package://jackal_description/urdf/sensors/kinect.dae"/>
+				<mesh filename="package://husky_description/urdf/sensors/kinect.dae"/>
 				</geometry>
 			</visual>
 			<collision>

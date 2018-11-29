@@ -13,11 +13,11 @@
        <param name="vins_folder" type="string" value="$(arg vins_path)" />
     </node>
 
-     <!-- Start EKF for localization-->
+   <!-- Start EKF for localization
   <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization">
     <rosparam command="load" file="$(find husky_control)/config/vins_localization.yaml" />
     <remap from="odometry/filtered" to="/vins_odometry/filtered"/>
   </node>
- 
+ -->
 
 </launch>

@@ -1,5 +1,4 @@
 cd
-git clone --recursive https://github.com/raulmur/ORB_SLAM2
 mkdir dependencies
 cd dependencies
 
@@ -20,10 +19,16 @@ cd build
 cmake ..
 sudo make install 
 
-cd
+cd ~/visualslam_ws/src
+
+#git clone --recursive https://github.com/raulmur/ORB_SLAM2
+git clone --recursive https://gitlab.tu-berlin.de/breakdowncookie/ORB_SLAM2
+
 cd ORB_SLAM2
 chmod +x build.sh
 ./build.sh
-echo "export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:~/ORB_SLAM2/Examples/ROS" >> ~/.bashrc
+echo "export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:~/visualslam_ws/src/ORB_SLAM2/Examples/ROS" >> ~/.bashrc
 chmod +x build_ros.sh
 ./build_ros.sh
+
+

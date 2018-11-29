@@ -1,7 +1,7 @@
 
 echo "Installing other dependencies"
 
-sudo apt install ros-kinetic-controller* -y
+sudo apt install ros-kinetic-control* -y
 sudo apt install ros-kinetic-lms1xx* -y
 sudo apt install ros-kinetic-rosbridge* -y
 sudo apt install ros-kinetic-robot-localization* -y
@@ -49,3 +49,29 @@ sudo apt-get install ros-kinetic-freenect-* -y
 sudo apt-get install ros-kinetic-openni* -y
 sudo apt-get install ros-kinetic-ros* -y
 sudo apt-get install ros-kinetic-sophus* -y
+sudo apt-get install ros-kinetic-acker* -y
+sudo apt-get install ros-kinetic-rviz* -y
+sudo apt-get install ros-kinetic-imu* -y
+sudo apt install ros-kinetic-hector* -y
+sudo apt install ros-kinetic-pose* -y
+sudo apt install ros-kinetic-naviga* -y
+sudo apt install ros-kinetic-qt* -y
+
+sudo apt install ros-kinetic-cmd* -y
+sudo apt install ros-kinetic-rqt* -y
+sudo apt install ros-kinetic-sensor* -y
+sudo apt install ros-kinetic-yocs* -y
+sudo apt install ros-kinetic-slam* -y
+sudo apt install ros-kinetic-mobile* -y
+sudo apt install ros-kinetic-sick* -y
+sudo apt install ros-kinetic-can* -y
+sudo apt install ros-kinetic-teb* -y
+sudo apt install ros-kinetic-robot* -y
+sudo apt install ros-kinetic-ira* -y
+sudo apt-get remove ros-kinetic-desktop-full
+sudo apt-get remove ros-kinetic-gazebo*
+sudo apt-get upgrade -y
+sudo apt-get install ros-kinetic-gazebo8* -y
+sudo apt-get install ros-kinetic-gazebo-worlds-oru -y
+sudo apt-get install ros-kinetic-orunav-mpc -y 
+sudo apt-get install ros-kinetic-navigation-oru -y

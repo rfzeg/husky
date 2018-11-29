@@ -2,9 +2,9 @@
 <launch>
   <arg name="config" default="base" />
   <arg name="robot_namespace" default="/"/>
-  <arg name="laser_enabled" default="$(optenv HUSKY_LMS1XX_ENABLED false)"/>
-  <arg name="kinect_enabled" default="$(optenv HUSKY_KINECT_ENABLED false)"/>
-  <arg name="urdf_extras" default="$(optenv HUSKY_URDF_EXTRAS)"/>
+  <arg name="laser_enabled" default="true"/>
+  <arg name="kinect_enabled" default="true"/>
+  <arg name="urdf_extras" default="false"/>
 
   <param name="robot_description"
          command="$(find xacro)/xacro '$(find husky_description)/urdf/golfcart.urdf.xacro'

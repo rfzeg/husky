@@ -24,6 +24,7 @@ sudo apt-get install libatlas-base-dev -y
 # Eigen3
 sudo apt-get install libeigen3-dev -y
 
+sudo apt install ros-kinetic-octomap* -y
 #sudo add-apt-repository ppa:bzindovic/suitesparse-bugfix-1319687
 
 
